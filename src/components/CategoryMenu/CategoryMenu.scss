@@ -1,0 +1,69 @@
+@import '../../styles/patterns';
+
+.CategoryMenu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 70vh;
+
+	&__title {
+		font-size: $second-large;
+		line-height: 45px;
+		font-weight: $bold;
+		position: relative;
+		margin-bottom: 50px;
+
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: -10px;
+			left: 37%;
+			right: 0;
+			height: 3px;
+			width: 25%;
+			background: $gray;
+		}
+	}
+
+	&__items {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		flex-flow: row wrap;
+	}
+
+	&__cards {
+		margin: 50px 0;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.CategoryMenu {
+		&__title {
+			font-size: $extra-large;
+			line-height: 45px;
+			font-weight: $bold;
+			position: relative;
+			margin-bottom: 50px;
+		}
+
+		&__items {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			flex-flow: row wrap;
+		}
+
+		&__cards {
+			margin: 50px 0;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.CategoryMenu {
+		&__items {
+			justify-content: space-between;
+		}
+	}
+}

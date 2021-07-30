@@ -1,0 +1,58 @@
+/* Colors */
+$red-first: #c23634;
+
+$red-second: #761513;
+$white-first: #ffffff;
+$black-first: #000000;
+$green-first: #3c808e;
+$orange-first: #dd9c41;
+$yellow-first: #fdf0b2;
+$light-gray: #f2f2f2;
+$gray: #c2c2c2;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+$primary-font: 'Roboto', sans-serif;
+
+/* Weights */
+$light: 300;
+$normal: 400;
+$standard: 500;
+$bold: 600;
+$bolder: 700;
+$max-bold: 900;
+
+/* Sizes */
+$xtra-small: 1rem; // 10px
+$small: 1.4rem; //14px
+$medium: 1.6rem; //16px
+$large: 1.8rem; //18px
+$second-large: 2rem; //20px
+$third-large: 2.1rem; //21px
+$fourth-large: 2.2rem; //22px
+$fifth-large: 2.5rem; //25px
+$extra-large: 3.2rem; //32px
+
+/* %main-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 1.5rem;
+    min-height: 3rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a,
+    p {
+        font-size: $small;
+        font-weight: $max-bold;
+        letter-spacing: 0.78px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+} */

@@ -1,0 +1,42 @@
+@import '../../styles/patterns';
+
+.contador {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid $gray;
+	border-radius: 5px;
+	margin-bottom: 15px;
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0 5px;
+		&__num {
+			font-size: 1.5rem;
+			margin: 0;
+			text-align: center;
+			padding: 5px 10px;
+		}
+		&__chevrons {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__counter {
+			text-align: center;
+			padding: 0;
+			color: $gray;
+			font-size: 1.5rem;
+			background-color: $white-first;
+			border: none;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@import "../../styles/patterns";
+
+.signup {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    // margin-bottom: 4px;
+    &__icons {
+        color: $black-first;
+        cursor: pointer;
+        font-size: $fourth-large;
+        margin: 0 10px 0px 10px;
+
+        &--active {
+            color: #fff;
+        }
+    }
+
+    &__user {
+        &__saludo {
+            font-size: 10px;
+            margin-bottom: 0rem;
+
+            &--active {
+                color: #fff;
+            }
+        }
+
+        &__name {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 0rem;
+
+
+
+            &--a {
+                font-size: 14px;
+                text-decoration: none;
+                color: #333;
+
+
+                &:hover {
+                    color: pink;
+                }
+            }
+
+            &--active {
+                color: #fff;
+            }
+        }
+    }
+}

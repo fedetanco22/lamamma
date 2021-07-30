@@ -1,0 +1,65 @@
+@import '../../styles/patterns';
+
+.FAQs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+
+	&__img {
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+		margin-top: 15px;
+	}
+
+	&__item {
+		&__txt {
+			padding: 20px;
+
+			&--2 {
+				padding-top: 40px;
+			}
+
+			&--3 {
+				text-align: right;
+				padding-top: 35px;
+			}
+
+			&--4 {
+				padding-top: 90px;
+			}
+		}
+
+		&__h3 {
+			font-size: 12.5px;
+			font-weight: $bold;
+		}
+
+		&__p {
+			font-size: 10px;
+			line-height: 20px;
+		}
+
+		&__1 {
+			height: 200px;
+			background-image: url('../../assets/images/Paso1-sintexto.jpg');
+		}
+
+		&__2 {
+			height: 115px;
+			background-image: url('../../assets/images/Paso2-sintexto.jpg');
+		}
+
+		&__3 {
+			height: 115px;
+			background-image: url('../../assets/images/Paso3-sintexto.jpg');
+		}
+
+		&__4 {
+			height: 200px;
+			background-image: url('../../assets/images/Paso4-sintexto.jpg');
+		}
+	}
+}

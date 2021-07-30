@@ -1,0 +1,84 @@
+@import '../../styles/patterns';
+
+.navbar {
+	background-color: $white-first;
+	// position: fixed;/*  */
+	width: 100%;
+	z-index: 20;
+	top: 0;
+	left: 0;
+
+	&__active {
+		background-color: $black-first;
+	}
+}
+
+.menu {
+	height: 100px;
+	width: 100%;
+	&__row {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
+
+		&--left {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__items {
+		color: #666;
+		cursor: pointer;
+		font-size: $second-large;
+		font-weight: 400;
+		margin: 0 25px;
+		text-transform: uppercase;
+		border: none;
+		background-color: rgba(255, 255, 255, 0);
+
+		&--active {
+			color: #fff;
+		}
+	}
+
+	&__icons {
+		color: $black-first;
+		cursor: pointer;
+		font-size: $fifth-large;
+		margin: 0 0 4px;
+
+		&--active {
+			color: #fff;
+		}
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.navbar {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+	.menu {
+		max-width: 1400px;
+
+		&__list {
+			align-items: flex-end;
+		}
+		&__icons {
+			margin: 0 10px 0px 10px;
+		}
+	}
+}

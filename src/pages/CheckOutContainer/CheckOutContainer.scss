@@ -1,0 +1,57 @@
+@import '../../styles/patterns';
+
+.checkout {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	// margin-top: 50px;
+	height: 80vh;
+
+	&__container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 5px;
+		// margin-top: 50px;
+		// height: 100vh;
+	}
+
+	&__sections {
+		display: flex;
+		flex-direction: column;
+
+		&--detalle {
+			width: 60%;
+		}
+
+		&--pago,
+		&--login {
+			max-width: 500px;
+		}
+	}
+
+	&__titulosPpales {
+		margin: 0px 0px 20px;
+		font-size: 40px;
+		font-weight: 900;
+		text-align: center;
+
+		&--tarjeta {
+			@extend .checkout__titulosPpales;
+			font-size: 30px;
+		}
+	}
+
+	&__titulo {
+		font-size: $small;
+		text-align: center;
+		margin: 0px 0px 20px 0px;
+
+		&--weight {
+			font-weight: 900;
+			font-size: $small;
+		}
+	}
+}

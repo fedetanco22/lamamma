@@ -1,0 +1,152 @@
+@import '../../styles/patterns';
+
+.detailContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+
+	&__imageContainer {
+		background-color: #c2c2c256;
+		/* width: 287px; */
+		height: 368px;
+		padding: 10%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		margin-top: 50px;
+
+		&__img {
+			width: 195px;
+			height: 195px;
+			object-fit: cover;
+			border-radius: 50% 50%;
+			border: 2px solid rgba(0, 0, 0, 0.233);
+		}
+		&__sello {
+			position: absolute;
+			box-sizing: border-box;
+			transform: translate(-75%, -95%);
+			width: 168px;
+			z-index: 1000;
+
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	&__detail {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+
+		&__txt {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__titulo {
+			font-size: 3rem;
+			font-weight: 700;
+			color: $red-first;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		&__descrip {
+			font-size: $small;
+			text-align: center;
+			padding: 0 30px;
+		}
+
+		&__precio {
+			padding: 5px;
+			font-size: 2rem;
+			font-weight: 600;
+		}
+		&__btn {
+			height: 44px;
+			width: 146px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;
+
+			p {
+				font-size: 1.2rem;
+				line-height: 25px;
+				margin: 0;
+				padding: 0 5px;
+			}
+			svg {
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.item {
+		flex-direction: row;
+
+		&__imageContainer {
+			margin-top: 30px;
+			width: 380px;
+			height: 490px;
+
+			&__img {
+				width: 320px;
+				height: 320px;
+			}
+			&__sello {
+				transform: translate(-90%, -130%);
+			}
+		}
+		&__detail {
+			margin-top: 0px;
+			padding-left: 30px;
+			align-items: flex-start;
+			&__txt {
+				align-items: flex-start;
+			}
+			&__titulo,
+			&__descrip {
+				text-align: left;
+			}
+			&__descrip {
+				padding: 0 0px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.item {
+		&__imageContainer {
+			padding: 40px;
+			&__img {
+				width: 320px;
+				height: 320px;
+			}
+			&__sello {
+				transform: translate(-112%, -130%);
+			}
+		}
+		&__detail {
+			padding-left: 60px;
+		}
+	}
+}
