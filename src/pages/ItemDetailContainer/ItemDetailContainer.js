@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { ItemDetail, Spinner } from '../../components/index';
 
 import getProductById from '../../backend/item';
+import './ItemDetailContainer.scss';
 
 export const ItemDetailContainer = () => {
 	const [loading, setLoading] = useState(true);

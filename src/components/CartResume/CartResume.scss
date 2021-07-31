@@ -1,0 +1,17 @@
+@import '../../styles/patterns';
+
+.CartResume {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	&__itemList {
+		background-color: $gray;
+		text-align: left;
+		&__item {
+			display: flex;
+		}
+	}
+	p {
+		font-size: 20px;
+	}
+}
